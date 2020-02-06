@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Built-By: William
+Build-Jdk: 11.0.3
+Implementation-Title: springcloud-learn-api-service-member
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: springcloud-learn-parent
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/springcloud-learn/springcloud-learn-parent/springcloud-
+ learn-api-service/springcloud-learn-api-service-member
+Created-By: Maven Integration for Eclipse
+

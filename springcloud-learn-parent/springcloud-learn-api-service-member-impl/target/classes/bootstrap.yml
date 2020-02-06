@@ -1,0 +1,18 @@
+spring:
+   application:
+      name: springcloud-learn-api-service-member
+   cloud:
+      config:
+         profile: sit
+         discovery:
+            service-id: config-server
+            enabled: true
+eureka:
+   client:
+      service-url:
+         defaultZone: http://localhost:8092/eureka,http://localhost:8091/eureka
+      register-with-eureka: true
+      fetch-registry: true
+   instance:
+      lease-renewal-interval-in-seconds: 1
+      lease-expiration-duration-in-seconds: 2

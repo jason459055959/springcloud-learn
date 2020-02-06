@@ -1,0 +1,25 @@
+eureka:
+   client:
+      # 表示是否注册自身到eureka服务器
+      register-with-eureka: true
+      # 是否从eureka上获取注册信息
+      fetch-registry: true
+      service-url:
+         defaultZone: http://localhost:8092/eureka/,http://localhost:8091/eureka/
+   instance:
+      lease-renewal-interval-in-seconds: 1
+      lease-expiration-duration-in-seconds: 2
+spring:
+   application:
+      name: zuul-gateway-server
+   cloud:
+      config:
+         profile: sit
+         discovery:
+            service-id: config-server
+            enabled: true
+management:
+   endpoints:
+      web:
+         exposure:
+            include: '*'

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: William
+Build-Jdk: 11.0.3
+Implementation-Title: springcloud-learn-zuul-gateway
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: springcloud-learn-zuul-gateway
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/springcloud-learn/springcloud-learn-zuul-gateway
+Created-By: Maven Integration for Eclipse
+

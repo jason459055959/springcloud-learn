@@ -1,0 +1,26 @@
+server:
+  port: 8880
+eureka:
+  client:
+    # 表示是否注册自身到eureka服务器
+    register-with-eureka: true
+    # 是否从eureka上获取注册信息
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8092/eureka/,http://localhost:8091/eureka/
+spring:
+   application:
+      name: config-server
+   cloud:
+      config:
+         server:
+            git:
+               uri: https://github.com/jason459055959/springcloud-learn-config.git
+               search-paths: 
+               - learnConfig
+               #username: 459055959@qq.com
+               #password: 901208jason
+         label: master
+ribbon:
+   ReadTimeout: 6000
+   ConnectTimeout: 6000

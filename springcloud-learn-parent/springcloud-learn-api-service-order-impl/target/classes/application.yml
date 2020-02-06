@@ -1,0 +1,29 @@
+server:
+   port: 8001
+spring:
+   application:
+      name: springcloud-learn-api-service-order
+
+eureka:
+   client:
+      service-url:
+         defaultZone: http://127.0.0.1:8092/eureka,http://localhost:8091/eureka
+      register-with-eureka: true
+      fetch-registry: true
+
+ribbon:
+   ReadTimeout: 6000
+   ConnectTimeout: 6000
+  
+feign:
+   hystrix:
+      enabled: true
+      
+#hystrix判断超时开启/禁止 
+hystrix:
+   command:
+      default:
+         execution:
+            timeout:
+               enabled: true
+               

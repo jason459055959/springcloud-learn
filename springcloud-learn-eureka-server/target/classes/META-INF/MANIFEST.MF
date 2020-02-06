@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: William
+Build-Jdk: 11.0.3
+Implementation-Title: springcloud-learn-eureka-server
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: springcloud-learn-eureka-server
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/springcloud-learn/springcloud-learn-eureka-server
+Created-By: Maven Integration for Eclipse
+
